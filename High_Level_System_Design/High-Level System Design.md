@@ -1,10 +1,10 @@
-High-Level System Design:
+# High-Level System Design:
 
 Creating a system capable of supporting millions of users involves a complex, iterative process that requires ongoing refinement and improvement. In this article we will discuss about all key components of a system. By the end, you will have a foundational understanding of system design and the various components involved.
 
 Let's begin with:
 
-###Server Setup - Just simple server
+### Server Setup - Just simple server
 
 We start with a straightforward setup where all components operate on a single server. The diagram below shows a single server configuration, where the web application, database, cache, and other elements are all hosted on one server, consider we have everything at server side machine
 
