@@ -19,3 +19,11 @@ Dev.to: https://dev.to/t/systemdesignwithzeeshanali
 - [Https: How Https Works- HTTP Handshake](./Https_How_Https_Works/)
   - Working of HTTPS Protocol & HandShake Process
 
+- [How To Store Password in Database](./How_To_Store_Password_in_Database/)
+  - Details on how we should store Password in databse
+
+- [Capacity_Estimations](./Capacity_Estimations/)
+  - Details on How we can calculate Traffic Estimations, Storage requirement of a system
+
+- [CAP_Theorem](./CAP_Theorem/)
+  - How CAP theorem works? Examples to support explanation
