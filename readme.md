@@ -27,3 +27,10 @@ Dev.to: https://dev.to/t/systemdesignwithzeeshanali
 
 - [CAP_Theorem](./CAP_Theorem/)
   - How CAP theorem works? Examples to support explanation
+
+- [Storage_Concepts_in_System_Design](./Storage_Concepts_in_System_Design/)
+  - Type of storage in system design
+
+- [Design_a_High_Availability_System](./Design_a_High_Availability_System/)
+  - What is High Availabilty System? related to system up time
+  
