@@ -33,4 +33,13 @@ Dev.to: https://dev.to/t/systemdesignwithzeeshanali
 
 - [Design_a_High_Availability_System](./Design_a_High_Availability_System/)
   - What is High Availabilty System? related to system up time
+
+- [Hashing_Consistent_Hashing](./Hashing_Consistent_Hashing/)
+  - What is Hashing? Consistent Hashing? Examples
+
+- [Client_Server_Architecture_Pattern](./Client_Server_Architecture_Pattern/)
+  - What is Client Server Architecture Pattern ?
+
+- [Micro_Service_Architecture](./Micro_Service_Architecture/)
+  - What is Micro Service Architecture Pattern ?
   
