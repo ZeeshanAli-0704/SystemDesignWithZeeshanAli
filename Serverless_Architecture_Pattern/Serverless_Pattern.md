@@ -26,6 +26,22 @@ A popular serverless architecture is Function as a Service (FaaS), where develop
 - **Concurrency Limit:** The maximum number of function instances that can run simultaneously in one region, as determined by the cloud provider.
 - **Timeout:** The time allowed by the cloud provider for a function to run before termination. Providers set both default and maximum timeouts.
 
+### Advantages of Serverless Architecture
+
+- Cost-Efficiency: Pay only for the compute resources used during execution, avoiding costs for idle resources.
+- Scalability: Automatic scaling based on demand without manual intervention.
+- Reduced Operational Overhead: No need for server maintenance, security updates, or infrastructure management.
+- Faster Time to Market: Developers can focus on writing and deploying code, accelerating development cycles.
+- Flexibility: Easily integrate with other cloud services and third-party APIs.
+
+### Disadvantages of Serverless Architecture
+
+- Cold Start Latency: Initial latency when a function is triggered for the first time or after a period of inactivity.
+- Vendor Lock-In: Dependency on a specific cloud provider’s ecosystem and services.
+- Limited Execution Time: Functions have a maximum execution time, which may not be suitable for long-running tasks.
+- Complexity in Debugging and Monitoring: Debugging and monitoring serverless applications can be more complex compared to traditional architectures.
+- Concurrency Limits: Each cloud provider sets limits on the number of concurrent function executions, which may require careful planning to avoid throttling.
+
 ### Serverless Architecture vs. Container Architecture
 
 Both serverless and container architectures abstract away the host environment but have distinct differences:
