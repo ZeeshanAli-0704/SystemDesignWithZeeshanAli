@@ -1,45 +1,46 @@
 # My Project
 
-Welcome to my project repository! 
-Get all articles related to system design Hastag: SystemDesignWithZeeshanAli
+Welcome to my project repository! Here, you will find a comprehensive collection of articles and resources related to system design, gathered under the hashtag: **#SystemDesignWithZeeshanAli**.
 
-Git: https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli
-
-Dev.to: https://dev.to/t/systemdesignwithzeeshanali
-
+- **GitHub**: [System Design with Zeeshan Ali](https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli)
+- **Dev.to**: [System Design with Zeeshan Ali](https://dev.to/t/systemdesignwithzeeshanali)
 
 ## Folders
 
-- [High Level System Design](./High_Level_System_Design/)
-  - High Level Details of a system components - Foundational leve
+### [High Level System Design](./High_Level_System_Design/)
+- **Description**: An overview of the fundamental components that make up a system at a high level. This foundational level covers the essential elements and their interactions within a system.
 
-- [URL Working In Browser](./URL_Working_In_Browser/)
-  - What happens when you enter any URL in Browser
+### [URL Working In Browser](./URL_Working_In_Browser/)
+- **Description**: An exploration of the processes that occur when a URL is entered into a browser. This includes DNS resolution, TCP/IP connections, and the HTTP/HTTPS request/response cycle.
 
-- [Https: How Https Works- HTTP Handshake](./Https_How_Https_Works/)
-  - Working of HTTPS Protocol & HandShake Process
+### [HTTPS: How HTTPS Works - HTTP Handshake](./Https_How_Https_Works/)
+- **Description**: A detailed explanation of the HTTPS protocol and the handshake process that secures data transmission between a client and a server.
 
-- [How To Store Password in Database](./How_To_Store_Password_in_Database/)
-  - Details on how we should store Password in databse
+### [How To Store Password in Database](./How_To_Store_Password_in_Database/)
+- **Description**: Guidelines and best practices for securely storing passwords in a database, including hashing algorithms and salting techniques.
 
-- [Capacity_Estimations](./Capacity_Estimations/)
-  - Details on How we can calculate Traffic Estimations, Storage requirement of a system
+### [Capacity Estimations](./Capacity_Estimations/)
+- **Description**: Methods for calculating traffic estimations and storage requirements for a system, helping to ensure that it can handle the expected load.
 
-- [CAP_Theorem](./CAP_Theorem/)
-  - How CAP theorem works? Examples to support explanation
+### [CAP Theorem](./CAP_Theorem/)
+- **Description**: An explanation of the CAP theorem, which addresses the trade-offs between consistency, availability, and partition tolerance in distributed systems, along with practical examples.
 
-- [Storage_Concepts_in_System_Design](./Storage_Concepts_in_System_Design/)
-  - Type of storage in system design
+### [Storage Concepts in System Design](./Storage_Concepts_in_System_Design/)
+- **Description**: An overview of different types of storage used in system design, including databases, file systems, and caching mechanisms.
 
-- [Design_a_High_Availability_System](./Design_a_High_Availability_System/)
-  - What is High Availabilty System? related to system up time
+### [Design a High Availability System](./Design_a_High_Availability_System/)
+- **Description**: Insights into designing systems for high availability, focusing on strategies to ensure system uptime and reliability.
 
-- [Hashing_Consistent_Hashing](./Hashing_Consistent_Hashing/)
-  - What is Hashing? Consistent Hashing? Examples
+### [Hashing and Consistent Hashing](./Hashing_Consistent_Hashing/)
+- **Description**: A deep dive into hashing techniques and consistent hashing, with examples to illustrate their use in system design.
 
-- [Client_Server_Architecture_Pattern](./Client_Server_Architecture_Pattern/)
-  - What is Client Server Architecture Pattern ?
+### [Client-Server Architecture Pattern](./Client_Server_Architecture_Pattern/)
+- **Description**: An explanation of the client-server architecture pattern, detailing how clients and servers interact within a network.
 
-- [Micro_Service_Architecture](./Micro_Service_Architecture/)
-  - What is Micro Service Architecture Pattern ?
-  
+### [Microservice Architecture](./Micro_Service_Architecture/)
+- **Description**: An overview of the microservice architecture pattern, highlighting its benefits and challenges, and how it differs from monolithic architectures.
+
+### [Event-Driven Architecture Pattern](./Event_Driven_Architecture_Pattern/)
+- **Description**: An introduction to the event-driven architecture pattern, explaining how systems can react to events in real-time to improve responsiveness and scalability.
+
+Explore these folders to gain a deeper understanding of various system design concepts and their practical applications.
