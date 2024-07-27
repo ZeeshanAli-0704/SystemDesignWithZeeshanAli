@@ -43,4 +43,11 @@ Welcome to my project repository! Here, you will find a comprehensive collection
 ### [Event-Driven Architecture Pattern](./Event_Driven_Architecture_Pattern/)
 - **Description**: An introduction to the event-driven architecture pattern, explaining how systems can react to events in real-time to improve responsiveness and scalability.
 
+
+
+### [Serverless Architecture Pattern](./Serverless_Architecture_Pattern)
+- **Description**: An introduction to the serverless architecture pattern, explaining what serveerless pattern is & how to use & when to use. Key advantage & dis-advantage
+
+
+
 Explore these folders to gain a deeper understanding of various system design concepts and their practical applications.
