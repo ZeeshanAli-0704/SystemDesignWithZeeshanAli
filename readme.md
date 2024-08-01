@@ -50,6 +50,9 @@ Welcome to my project repository! Here, you will find a comprehensive collection
 
 
 ### [CND's](./CDN)
-- **Description**: What is CDN? How does CDN works? & Details on when to use CDN? 
+- **Description**: What is CDN ? How does CDN works ? Details on when to use CDN ? 
+
+### [DNS - The Domain Name System (DNS)](./DNS)
+- **Description**: What is DNS ? How does DNS works ? Details related to DNS, DNS Servers, DNS lookup, DNS security, DNS caching etec
 
 Explore these folders to gain a deeper understanding of various system design concepts and their practical applications.
