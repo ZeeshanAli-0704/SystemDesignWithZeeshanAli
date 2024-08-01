@@ -42,7 +42,7 @@ Welcome to my project repository! Here, you will find a comprehensive collection
 ### [HTTPS: How HTTPS Works - HTTP Handshake](./Https_How_Https_Works/)
 - **Description**: A detailed explanation of the HTTPS protocol and the handshake process that secures data transmission between a client and a server.
 
-### [Load Balancers](./Load Balancers/)
+### [Load Balancers](./Load_Balancers/)
 - **Description**: A detailed explanation on load balancers. layer 4 vs layer 7. Type of algorithms with example & details.  
 
 ### [Microservice Architecture](./Micro_Service_Architecture/)
