@@ -80,6 +80,9 @@ Cloud-based load balancers are provided as a service by cloud providers. They of
 
 By understanding the different types of load balancers, their features, advantages, and challenges, organizations can make informed decisions about which solution best fits their needs. Whether it's the raw performance of hardware, the flexibility of software, or the scalability of cloud-based solutions, each type offers unique benefits for different use cases.
 
+---
+
+
 ### Load Balancing Algorithms
 
 ### 1. Round Robin
@@ -222,6 +225,8 @@ Each load balancing algorithm has its own set of strengths and weaknesses, makin
    - IP Hashing ensures that requests from the same client IP are consistently routed to the same server, which is useful for maintaining session persistence and ensuring consistent client-server interactions.
 
 By understanding these key concepts and questions, you'll have a solid foundation in load balancing for system design, enabling you to design robust and efficient systems.
+
+---
 
 
 More Details:
