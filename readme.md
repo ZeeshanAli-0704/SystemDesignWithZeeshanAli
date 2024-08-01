@@ -49,5 +49,7 @@ Welcome to my project repository! Here, you will find a comprehensive collection
 - **Description**: An introduction to the serverless architecture pattern, explaining what serveerless pattern is & how to use & when to use. Key advantage & dis-advantage
 
 
+### [CND's](./CDN)
+- **Description**: What is CDN? How does CDN works? & Details on when to use CDN? 
 
 Explore these folders to gain a deeper understanding of various system design concepts and their practical applications.
