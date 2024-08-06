@@ -48,6 +48,9 @@ Welcome to my project repository! Here, you will find a comprehensive collection
 ### [Microservice Architecture](./Micro_Service_Architecture/)
 - **Description**: An overview of the microservice architecture pattern, highlighting its benefits and challenges, and how it differs from monolithic architectures.
 
+### [Rate Limiter](./Rate_Limiter/)
+- **Description**: Complete system design on Rate Limiter.
+
 ### [Serverless Architecture Pattern](./Serverless_Architecture_Pattern)
 - **Description**: An introduction to the serverless architecture pattern, explaining what serverless pattern is & how to use & when to use. Key advantage & disadvantage.
 
