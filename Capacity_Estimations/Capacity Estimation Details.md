@@ -2,6 +2,7 @@ Part 1: [Pre-requisites : How I Calculate Capacity for Systems Design - 1](https
 
 ### Capacity Estimation Process Example: Twitter-like Application
 
+
 **1. Traffic Estimation**
 
 - **Monthly Active Users (MAU):** 500 million
