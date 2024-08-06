@@ -229,6 +229,55 @@ By understanding these key concepts and questions, you'll have a solid foundatio
 ---
 
 
+## Choosing the Right Load Balancing Product
+
+Selecting the appropriate load balancer depends on the type of traffic and specific requirements of your application. Here’s a guide to help you decide:
+
+#### 1. **Application Load Balancer (ALB)**
+- **Use Case**: When you need a flexible feature set for your applications.
+- **Traffic Type**: HTTP(S).
+- **Features**: Supports advanced routing, SSL termination, WebSocket, and HTTP/2.
+
+#### 2. **Proxy Network Load Balancer (NLB)**
+- **Use Case**: To implement TCP proxy load balancing.
+- **Traffic Type**: TCP.
+- **Features**: Can handle traffic to backends in one or more regions, provides high performance and low latency.
+
+#### 3. **Passthrough Network Load Balancer (NLB)**
+- **Use Case**: When you need to preserve client source IP addresses and avoid the overhead of proxies.
+- **Traffic Type**: TCP, UDP, ESP, ICMP.
+- **Features**: Supports additional protocols beyond HTTP(S), ensuring low-latency communication without modifying the packet data.
+
+### Further Considerations
+
+To make an informed decision, consider the following factors:
+
+- **Application Type**: Determine if your application is external (internet-facing) or internal.
+- **Backend Deployment**: Decide whether your backend services are deployed globally or regionally.
+- **Protocol Requirements**: Identify the protocols your application uses (e.g., HTTP, TCP, UDP).
+
+## Load-Balancing for Internal Traffic
+
+When designing a robust and scalable application, it's crucial to configure load balancing not only for traffic between external clients and the application but also for traffic between the internal tiers of the application stack. This ensures efficient and reliable communication within the system, preventing bottlenecks and ensuring smooth operations across different parts of the application.
+
+### Example: 3-Tier Web Application Stack
+In a typical 3-tier web application stack, you have:
+
+1. **Web Tier**: Handles incoming requests from clients, usually through a web server.
+2. **Application (App) Tier**: Processes business logic and communicates between the web tier and the database tier.
+3. **Database Tier**: Manages data storage and retrieval.
+
+By using an internal load balancer between the web and app tiers, you ensure that requests from the web servers are evenly distributed across the application servers. This not only improves performance but also increases the reliability and fault tolerance of your application.
+
+By carefully evaluating these aspects, you can select the load balancing solution that best fits your application’s architecture and traffic patterns, ensuring optimal performance and reliability.
+
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6tq4l2bmxlkdzb19fepp.png)
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aq521c8xrvddsh64g7hs.png)
+
+---
+
 More Details:
 
 Get all articles related to system design 
