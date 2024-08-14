@@ -119,6 +119,8 @@ Scalability is the ability of a system to handle increasing loads by adding reso
      - Normal hashing works well when the number of nodes remains constant. However, if you add or remove nodes, the hash function will map most keys to different nodes, requiring a massive reshuffling of data across the nodes. For example, if you have 4 nodes and add a 5th one, the keys that were originally assigned to all nodes might need to be reassigned, causing significant overhead and inefficiency.
 
 3. **Consistent Hashing:**
+[consistent-hashing](https://dev.to/zeeshanali0704/hashing-consistent-hashing-all-about-hashing-with-example-2l2k)
+
    - **Consistent Hashing** solves the problem of massive data reshuffling by mapping both keys and nodes onto a conceptual ring of hash values, ranging from 0 to \( n-1 \), where \( n \) is the total number of possible hash values.
    - **How It Works:**
      - Each node is assigned a position on the ring based on its hash value. Similarly, each key is also assigned a position on the ring. When a request arrives, the system locates the key's position on the ring and moves clockwise until it finds the nearest node. This node is responsible for handling the request.
@@ -399,3 +401,12 @@ To ensure the system is resilient to both temporary and permanent failures, the 
 
 Failure handling is a critical aspect of distributed systems, ensuring that the system remains available, consistent, and reliable despite the inevitable occurrence of failures. By using techniques like sloppy quorum, hinted handoff, and Merkle trees, distributed systems can gracefully handle both temporary and permanent failures, minimizing the impact on overall system performance.
 
+More Details:
+
+Get all articles related to system design 
+Hastag: SystemDesignWithZeeshanAli
+
+
+[systemdesignwithzeeshanali](https://dev.to/t/systemdesignwithzeeshanali)
+
+Git: https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli
