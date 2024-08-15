@@ -27,7 +27,7 @@ Welcome to my project repository! Here, you will find a comprehensive collection
 ### [Design a High Availability System](./Design_A_Key_Value_Store/)
 - **Description**: Complete system design on Key-value storage. Along with API methods, other system design paramters like data replication, data partioning, fault tolerance etc
 
-### [Design a PasteBin](./Design_A_PasteBin/)
+### [Design a PasteBin ](./Design_A_PasteBin/)
 - **Description**: Complete system design on Paste Bin. Along with Algorithms, API methods & details.
 
 ### [Design a URL Shortner](./Design_A_URL_Shortening/)
