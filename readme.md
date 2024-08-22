@@ -33,6 +33,9 @@ Welcome to my project repository! Here, you will find a comprehensive collection
 ### [Design a URL Shortner](./Design_A_URL_Shortening/)
 - **Description**: Complete system design on URL shortner. Along with Algorithms & API methods
 
+### [Design a Web Crawler](./Designing_a_Web_Crawler/)
+- **Description**: Complete system design on Web Crawlers. Components in Web Crawlers. Common FAQ's
+
 ### [DNS - The Domain Name System (DNS)](./DNS)
 - **Description**: What is DNS ? How does DNS works ? Details related to DNS, DNS Servers, DNS lookup, DNS security, DNS caching etc.
 
