@@ -1,8 +1,7 @@
-To arrange the folders alphabetically, we need to reorder the list of folders under the "Folders" section. Here's the updated arrangement:
 
-# My Project
+# System Design 
 
-Welcome to my project repository! Here, you will find a comprehensive collection of articles and resources related to system design, gathered under the hashtag: **#SystemDesignWithZeeshanAli**.
+Welcome to my project repository! Here, you will find a curated collection of articles and resources dedicated to system design. This repository is built around the hashtag **#SystemDesignWithZeeshanAli**.
 
 - **GitHub**: [System Design with Zeeshan Ali](https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli)
 - **Dev.to**: [System Design with Zeeshan Ali](https://dev.to/t/systemdesignwithzeeshanali)
@@ -10,66 +9,64 @@ Welcome to my project repository! Here, you will find a comprehensive collection
 ## Folders
 
 ### [CAP Theorem](./CAP_Theorem/)
-- **Description**: An explanation of the CAP theorem, which addresses the trade-offs between consistency, availability, and partition tolerance in distributed systems, along with practical examples.
+- **Description**: A detailed explanation of the CAP theorem, discussing the trade-offs between consistency, availability, and partition tolerance in distributed systems. This folder includes practical examples and use cases.
 
 ### [Capacity Estimations](./Capacity_Estimations/)
-- **Description**: Methods for calculating traffic estimations and storage requirements for a system, helping to ensure that it can handle the expected load.
+- **Description**: Techniques and methodologies for calculating traffic and storage estimations for a system, ensuring that it can handle the anticipated load effectively.
 
-### [CND's](./CDN)
-- **Description**: What is CDN ? How does CDN works ? Details on when to use CDN ?
+### [CDN's (Content Delivery Networks)](./CDN)
+- **Description**: An in-depth look at Content Delivery Networks (CDNs), including what they are, how they work, and when they should be used to improve content delivery and system performance.
 
 ### [Client-Server Architecture Pattern](./Client_Server_Architecture_Pattern/)
-- **Description**: An explanation of the client-server architecture pattern, detailing how clients and servers interact within a network.
+- **Description**: A comprehensive guide to the client-server architecture pattern, detailing how clients and servers interact within a network to deliver services.
 
 ### [Design a High Availability System](./Design_a_High_Availability_System/)
-- **Description**: Insights into designing systems for high availability, focusing on strategies to ensure system uptime and reliability.
+- **Description**: Strategies and best practices for designing systems with high availability, focusing on ensuring maximum uptime and reliability in various scenarios.
 
-### [Design a High Availability System](./Design_A_Key_Value_Store/)
-- **Description**: Complete system design on Key-value storage. Along with API methods, other system design paramters like data replication, data partioning, fault tolerance etc
+### [Design a Key-Value Store](./Design_A_Key_Value_Store/)
+- **Description**: A complete system design of a key-value storage system, covering API methods, data replication, partitioning, fault tolerance, and other essential parameters.
 
-### [Design a PasteBin ](./Design_A_PasteBin/)
-- **Description**: Complete system design on Paste Bin. Along with Algorithms, API methods & details.
+### [Design a PasteBin](./Design_A_PasteBin/)
+- **Description**: A full system design of a PasteBin service, including algorithms, API methods, and detailed implementation guidance.
 
-### [Design a URL Shortner](./Design_A_URL_Shortening/)
-- **Description**: Complete system design on URL shortner. Along with Algorithms & API methods
+### [Design a URL Shortener](./Design_A_URL_Shortening/)
+- **Description**: Comprehensive system design for a URL shortener service, covering the algorithms, API methods, and implementation details.
 
 ### [Design a Web Crawler](./Designing_a_Web_Crawler/)
-- **Description**: Complete system design on Web Crawlers. Components in Web Crawlers. Common FAQ's
+- **Description**: A complete system design for web crawlers, including the components involved, common FAQs, and best practices.
 
-### [DNS - The Domain Name System (DNS)](./DNS)
-- **Description**: What is DNS ? How does DNS works ? Details related to DNS, DNS Servers, DNS lookup, DNS security, DNS caching etc.
+### [DNS - The Domain Name System](./DNS)
+- **Description**: A detailed exploration of the Domain Name System (DNS), including its functionality, how DNS servers work, DNS lookup, caching, security, and more.
 
 ### [Event-Driven Architecture Pattern](./Event_Driven_Architecture_Pattern/)
-- **Description**: An introduction to the event-driven architecture pattern, explaining how systems can react to events in real-time to improve responsiveness and scalability.
+- **Description**: An introduction to the event-driven architecture pattern, explaining how systems can react to events in real-time to improve responsiveness, scalability, and flexibility.
 
 ### [Hashing and Consistent Hashing](./Hashing_Consistent_Hashing/)
-- **Description**: A deep dive into hashing techniques and consistent hashing, with examples to illustrate their use in system design.
+- **Description**: An in-depth study of hashing techniques and consistent hashing, with practical examples demonstrating their application in system design.
 
-### [High Level System Design](./High_Level_System_Design/)
-- **Description**: An overview of the fundamental components that make up a system at a high level. This foundational level covers the essential elements and their interactions within a system.
+### [High-Level System Design](./High_Level_System_Design/)
+- **Description**: An overview of the fundamental components and their interactions within a system, providing a high-level understanding of system design.
 
-### [How To Store Password in Database](./How_To_Store_Password_in_Database/)
-- **Description**: Guidelines and best practices for securely storing passwords in a database, including hashing algorithms and salting techniques.
+### [How to Store Passwords in a Database](./How_To_Store_Password_in_Database/)
+- **Description**: Best practices for securely storing passwords in databases, including hashing algorithms, salting techniques, and other security measures.
 
-### [HTTPS: How HTTPS Works - HTTP Handshake](./Https_How_Https_Works/)
-- **Description**: A detailed explanation of the HTTPS protocol and the handshake process that secures data transmission between a client and a server.
+### [HTTPS: How HTTPS Works - The HTTP Handshake](./Https_How_Https_Works/)
+- **Description**: A detailed explanation of the HTTPS protocol and the handshake process that ensures secure data transmission between a client and a server.
 
 ### [Load Balancers](./Load_Balancers/)
-- **Description**: A detailed explanation on load balancers. layer 4 vs layer 7. Type of algorithms with example & details.  
+- **Description**: A comprehensive guide to load balancers, including the differences between Layer 4 and Layer 7, types of algorithms, and practical examples.
 
 ### [Microservice Architecture](./Micro_Service_Architecture/)
-- **Description**: An overview of the microservice architecture pattern, highlighting its benefits and challenges, and how it differs from monolithic architectures.
+- **Description**: An overview of the microservice architecture pattern, discussing its benefits, challenges, and how it compares to monolithic architectures.
 
 ### [Rate Limiter](./Rate_Limiter/)
-- **Description**: Complete system design on Rate Limiter.
+- **Description**: A complete system design for implementing a rate limiter, including the algorithms, strategies, and use cases.
 
 ### [Serverless Architecture Pattern](./Serverless_Architecture_Pattern)
-- **Description**: An introduction to the serverless architecture pattern, explaining what serverless pattern is & how to use & when to use. Key advantage & disadvantage.
+- **Description**: An introduction to the serverless architecture pattern, explaining its core principles, when to use it, and its advantages and disadvantages.
 
 ### [Storage Concepts in System Design](./Storage_Concepts_in_System_Design/)
-- **Description**: An overview of different types of storage used in system design, including databases, file systems, and caching mechanisms.
+- **Description**: An overview of various storage concepts in system design, including databases, file systems, caching mechanisms, and their applications.
 
-### [URL Working In Browser](./URL_Working_In_Browser/)
-- **Description**: An exploration of the processes that occur when a URL is entered into a browser. This includes DNS resolution, TCP/IP connections, and the HTTP/HTTPS request/response cycle.
-
-Explore these folders to gain a deeper understanding of various system design concepts and their practical applications.
+### [URL Working in Browser](./URL_Working_In_Browser/)
+- **Description**: An exploration of what happens when a URL is entered into a browser, covering DNS resolution, TCP/IP connections, the HTTP/HTTPS request/response cycle, and more.
