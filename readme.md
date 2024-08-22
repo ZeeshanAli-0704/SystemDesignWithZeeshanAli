@@ -1,4 +1,3 @@
-To arrange the folders alphabetically, we need to reorder the list of folders under the "Folders" section. Here's the updated arrangement:
 
 # My Project
 
