@@ -8,7 +8,7 @@ Welcome to my project repository! Here, you will find a curated collection of ar
 
 ## Folders
 
-### [CAP Theorem](./CAP_Theorem/)
+### [CAP Theorem](./CAP_Theorem/CAP_Theorem.md)
 - **Description**: A detailed explanation of the CAP theorem, discussing the trade-offs between consistency, availability, and partition tolerance in distributed systems. This folder includes practical examples and use cases.
 
 ### [Capacity Estimations](./Capacity_Estimations/)
