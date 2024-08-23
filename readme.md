@@ -32,6 +32,10 @@ Welcome to my project repository! Here, you will find a curated collection of ar
 ### [Design a URL Shortener](./Design_A_URL_Shortening/)
 - **Description**: Comprehensive system design for a URL shortener service, covering the algorithms, API methods, and implementation details.
 
+
+### [Design Notification Alerting Service](./Design_notification_alerting_service/)
+- **Description**: A detailed system design for a notification and alerting service. This documentation encompasses various components, database schema, API implementation, and use cases to illustrate functionality and workflows.
+
 ### [Design a Web Crawler](./Designing_a_Web_Crawler/)
 - **Description**: A complete system design for web crawlers, including the components involved, common FAQs, and best practices.
 
