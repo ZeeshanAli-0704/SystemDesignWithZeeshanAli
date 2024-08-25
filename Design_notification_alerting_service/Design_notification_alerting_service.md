@@ -206,9 +206,17 @@ The system should support sending notifications through third-party services suc
 
 # High Level Design Components
 
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/woc4p4hljn9foh4nvmr2.png)
+
+
 The high-level design includes several key components:
 **Service N**: 
    - A source service (e.g., a billing service) that triggers notifications, such as reminding customers of due payments.
+
+**Kafka**: Handles all notification requests asynchronously.
+
+**Notification Validator / Prioritizer**: Validates incoming notifications and prioritizes them based on predefined criteria before processing.
 
 **Notification Servers**:
    - Handles requests from various services, ensuring they are authenticated, rate-limited, and processed.
@@ -249,9 +257,6 @@ The high-level design includes several key components:
 # Workflow Explanation
 
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oibnst97kpyf7v4bx6wm.png)
-
-Source: System Design Interview An Insider’s Guide by Alex Xu
 
 
 **Triggering the Notification**:
