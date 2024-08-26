@@ -1,3 +1,32 @@
+### Table of Contents
+
+1. [What is a Load Balancer?](#what-is-a-load-balancer)
+2. [Why Use a Load Balancer?](#why-use-a-load-balancer)
+   - [Increased Availability and Reliability](#increased-availability-and-reliability)
+   - [Improved Performance](#improved-performance)
+   - [Scalability](#scalability)
+   - [Maintenance](#maintenance)
+3. [What Does Load Balancing Actually Do?](#what-does-load-balancing-actually-do)
+4. [Layer 4 vs. Layer 7 Load Balancing](#layer-4-vs-layer-7-load-balancing)
+5. [Types of Load Balancers](#types-of-load-balancers)
+   - [Hardware Load Balancers](#hardware-load-balancers)
+   - [Software Load Balancers](#software-load-balancers)
+   - [Cloud based Load Balancers](#cloud-based-load-balancers)
+6. [Load Balancing Algorithms](#load-balancing-algorithms)
+   - [Round Robin](#round-robin)
+   - [Least Connections](#least-connections)
+   - [Weighted Round Robin](#weighted-round-robin)
+   - [Weighted Least Connections](#weighted-least-connections)
+   - [IP Hash](#ip-hash)
+   - [Least Response Time](#least-response-time)
+7. [Conclusion](#conclusion)
+8. [Q&A: Load Balancing System Design Interview Questions](#qa-load-balancing-system-design-interview-questions)
+9. [Choosing the Right Load Balancing Product](#choosing-the-right-load-balancing-product)
+   - [Application Load Balancer (ALB)](#application-load-balancer-alb)
+   - [Proxy Network Load Balancer (NLB)](#proxy-network-load-balancer-nlb)
+   - [Passthrough Network Load Balancer (NLB)](#passthrough-network-load-balancer-nlb)
+10. [Load Balancing for Internal Traffic](#load-balancing-for-internal-traffic)
+
 ## Load Balancer in System Design
 
 ### What is a Load Balancer?
@@ -26,7 +55,7 @@ Load balancing distributes incoming client requests or network load efficiently 
 
 ### Types of Load Balancers
 
-#### 1. Hardware Load Balancers
+#### Hardware Load Balancers
 
 **Overview**:
 Hardware load balancers are dedicated physical devices designed to manage and distribute network traffic across multiple servers. They are typically used in large-scale enterprise environments where high performance and advanced features are required.
@@ -40,7 +69,7 @@ Hardware load balancers are dedicated physical devices designed to manage and di
 - **Cost**: Hardware load balancers can be expensive, both in terms of initial purchase price and ongoing maintenance costs. They require a significant investment in hardware, which might not be feasible for smaller organizations.
 - **Flexibility**: Unlike software-based solutions, hardware load balancers are less flexible. They require physical installation and are not easily scalable. Adding more capacity typically means purchasing additional hardware.
 
-#### 2. Software Load Balancers
+#### Software Load Balancers
 
 **Overview**:
 Software load balancers are applications that run on standard hardware or virtual machines. They provide the same basic functionality as hardware load balancers but are more flexible and cost-effective.
@@ -59,7 +88,7 @@ Software load balancers are applications that run on standard hardware or virtua
 - **Performance**: While software load balancers are quite capable, they may not match the raw performance of specialized hardware devices, especially under very high loads.
 - **Management**: Deploying and managing software load balancers can be complex, requiring in-depth knowledge of the software and the underlying infrastructure.
 
-#### 3. Cloud-based Load Balancers
+#### Cloud based Load Balancers
 
 **Overview**:
 Cloud-based load balancers are provided as a service by cloud providers. They offer load balancing functionality without the need for any physical hardware or on-premises software installation.
@@ -226,24 +255,40 @@ Each load balancing algorithm has its own set of strengths and weaknesses, makin
 
 By understanding these key concepts and questions, you'll have a solid foundation in load balancing for system design, enabling you to design robust and efficient systems.
 
----
+9. What is sticky sessions in load balancing and discuss its advantages and potential drawbacks?
+Sticky sessions, also known as session affinity, is a load balancing technique where a series of requests from a specific client are always routed to the same server that handled the initial request.
 
+This is typically achieved by creating a unique session ID for the client and associating it with a particular server.
+
+The main advantage of sticky sessions is maintaining state for applications that aren't designed to be stateless, ensuring a consistent user experience for sessions that rely on server-side data.
+
+It's particularly useful for applications that store session data in server memory rather than in a shared database.
+
+However, sticky sessions come with drawbacks. They can lead to uneven load distribution if some users have particularly long or resource-intensive sessions.
+
+They also complicate scaling and failover processes, as the failure of a server can disrupt all active sessions assigned to it.
+
+In modern system design, the trend is towards stateless applications and storing session data in distributed caches or databases, which reduces the need for sticky sessions and allows for more flexible, resilient architectures.
+
+
+
+---
 
 ## Choosing the Right Load Balancing Product
 
 Selecting the appropriate load balancer depends on the type of traffic and specific requirements of your application. Here’s a guide to help you decide:
 
-#### 1. **Application Load Balancer (ALB)**
+#### **Application Load Balancer (ALB)**
 - **Use Case**: When you need a flexible feature set for your applications.
 - **Traffic Type**: HTTP(S).
 - **Features**: Supports advanced routing, SSL termination, WebSocket, and HTTP/2.
 
-#### 2. **Proxy Network Load Balancer (NLB)**
+#### **Proxy Network Load Balancer (NLB)**
 - **Use Case**: To implement TCP proxy load balancing.
 - **Traffic Type**: TCP.
 - **Features**: Can handle traffic to backends in one or more regions, provides high performance and low latency.
 
-#### 3. **Passthrough Network Load Balancer (NLB)**
+#### **Passthrough Network Load Balancer (NLB)**
 - **Use Case**: When you need to preserve client source IP addresses and avoid the overhead of proxies.
 - **Traffic Type**: TCP, UDP, ESP, ICMP.
 - **Features**: Supports additional protocols beyond HTTP(S), ensuring low-latency communication without modifying the packet data.
@@ -256,7 +301,7 @@ To make an informed decision, consider the following factors:
 - **Backend Deployment**: Decide whether your backend services are deployed globally or regionally.
 - **Protocol Requirements**: Identify the protocols your application uses (e.g., HTTP, TCP, UDP).
 
-## Load-Balancing for Internal Traffic
+## Load Balancing for Internal Traffic
 
 When designing a robust and scalable application, it's crucial to configure load balancing not only for traffic between external clients and the application but also for traffic between the internal tiers of the application stack. This ensures efficient and reliable communication within the system, preventing bottlenecks and ensuring smooth operations across different parts of the application.
 
@@ -277,6 +322,7 @@ By carefully evaluating these aspects, you can select the load balancing solutio
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aq521c8xrvddsh64g7hs.png)
 
 ---
+
 
 More Details:
 
