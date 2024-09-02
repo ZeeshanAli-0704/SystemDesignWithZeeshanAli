@@ -64,6 +64,14 @@ Welcome to my project repository! Here, you will find a curated collection of ar
 ### [Microservice Architecture](./Micro_Service_Architecture/)
 - **Description**: An overview of the microservice architecture pattern, discussing its benefits, challenges, and how it compares to monolithic architectures.
 
+### [Polling System](./PollingSystem/)
+- **Description**: A comprehensive low-level design of a polling system and its associated methods. It includes database design and CRUD operations on polls.
+    - [Basic Class-Level Implementation in C++](./PollingSystem/PollingSystemCPP)
+    - [Basic Class-Level Implementation in JavaScript](./PollingSystem/PollingSystemJS/PollingSystemInJS_Class_Level.md)
+    - [Node.js + API + MySQL Implementation in JavaScript](./PollingSystem/PollingSystemJS/PollingSystemInJS.md)
+    - [Advanced Use Cases - Edge Case Handling](./PollingSystem/PollingSystemJS/Edge-Case-Handling.md)
+
+
 ### [Rate Limiter](./Rate_Limiter/)
 - **Description**: A complete system design for implementing a rate limiter, including the algorithms, strategies, and use cases.
 
