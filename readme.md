@@ -22,6 +22,9 @@ Welcome to my project repository! Here, you will find a curated collection of ar
 ### [Design High Availability System](./Design_High_Availability_System/Design_High_Availability_System.md)
 - **Description**: Strategies and best practices for designing systems with high availability, focusing on ensuring maximum uptime and reliability in various scenarios.
 
+### [Design Instagram System](./Design_Instagram_System/Deisgn_instagram.md)
+- **Description**: Complete system deisgn on Instagram. Detail System design Digram, API implementation & other related components details
+
 ### [Design Key-Value Store](./Design_Key_Value_Store.md/)
 - **Description**: A complete system design of a key-value storage system, covering API methods, data replication, partitioning, fault tolerance, and other essential parameters.
 
