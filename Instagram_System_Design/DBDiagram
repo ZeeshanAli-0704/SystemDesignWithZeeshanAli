@@ -1,0 +1,74 @@
+
+Table users {
+  user_id int [primary key]
+  username varchar(255) [unique, not null]
+  email varchar(255) [unique, not null]
+  password_hash varchar(255) [not null]
+  profile_picture_url text
+  bio text
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+Table posts {
+  post_id int [primary key]
+  user_id int [ref: > users.user_id]
+  caption text
+  media_url text
+  media_type enum('image', 'video')
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table followers {
+  follower_id int [ref: > users.user_id]
+  followee_id int [ref: > users.user_id]
+  created_at timestamp
+  primary key (follower_id, followee_id)
+}
+
+Table comments {
+  comment_id int [primary key]
+  post_id int [ref: > posts.post_id]
+  user_id int [ref: > users.user_id]
+  comment_text text [not null]
+  created_at timestamp
+}
+
+Table likes {
+  like_id int [primary key]
+  post_id int [ref: > posts.post_id]
+  user_id int [ref: > users.user_id]
+  created_at timestamp
+}
+
+Table messages {
+  message_id int [primary key]
+  sender_id int [ref: > users.user_id]
+  receiver_id int [ref: > users.user_id]
+  message_text text [not null]
+  created_at timestamp
+}
+
+Table notifications {
+  notification_id int [primary key]
+  user_id int [ref: > users.user_id]
+  type enum('new_follower', 'like', 'comment')
+  entity_id int
+  is_read boolean [default: `FALSE`]
+  created_at datetime [default: `current_timestamp`]
+}
+
+Table feeds {
+  user_id int [ref: > users.user_id]
+  post_id int [ref: > posts.post_id]
+  created_at datetime [default: `current_timestamp`]
+
+  primary key (user_id, post_id)
+}
+
+
+
+
+
