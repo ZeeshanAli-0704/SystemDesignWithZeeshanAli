@@ -87,5 +87,5 @@ Welcome to my project repository! Here, you will find a curated collection of ar
 ### [URL Working in Browser](./URL_Working_In_Browser/)
 - **Description**: An exploration of what happens when a URL is entered into a browser, covering DNS resolution, TCP/IP connections, the HTTP/HTTPS request/response cycle, and more.
 
-### [What is Pub_Sub Architecture?](./What is Pub_Sub Architecture?/)
+### [What is Pub sub Architecture](./What_is_Pub_Sub_Architecture/What_is_Pub_Sub_Architecture.md)
 - **Description**: A comprehensive overview of the Pub/Sub model, including its key components, practical use cases, and illustrative examples to demonstrate its functionality and applications.
