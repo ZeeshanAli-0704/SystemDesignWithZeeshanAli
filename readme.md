@@ -34,6 +34,9 @@ Welcome to my project repository! Here, you will find a curated collection of ar
 ### [Design PasteBin](./Design_PasteBin/Design_PasteBin.md)
 - **Description**: A full system design of a PasteBin service, including algorithms, API methods, and detailed implementation guidance.
 
+### [Design Twitter](./Design_Twitter/Design_twitter.md)
+- **Description**: A full system design of a Twitter service, including algorithms, API methods, and detailed implementation guidance.
+
 ### [Design_Unique_ID_Generation](./Design_Unique_ID_Generation/Design_Unique_ID_Generation.md)
 - **Description**: A comprehensive guide on designing a unique ID generation system. This documentation covers various techniques for generating unique identifiers, including UUIDs, auto-incrementing IDs, and snowflake algorithms. It also discusses use cases, trade-offs, and performance considerations to ensure efficient and reliable ID generation in distributed systems.
 
