@@ -20,6 +20,9 @@ Welcome to the **System Design with Zeeshan Ali** repository! This collection is
 - **[HTTPS: How HTTPS Works - The HTTP Handshake](./Security_and_Best_Practices//Https_How_Https_Works/Https_How_Https_Works.md)**: Detailed explanation of the HTTPS protocol and the handshake process for secure data transmission.
 - **[Load Balancers](./Concepts/Load_Balancers/Load_Balancer.md)**: Overview of load balancing, covering Layer 4 vs. Layer 7, load balancing algorithms, and practical examples.
 - **[Storage Concepts in System Design](./Concepts/Storage_Concepts_in_System_Design/Storage_Concepts_in_System_Design.md)**: Overview of storage concepts, including databases, file systems, and caching mechanisms.
+- **[Database Replication System Design](./Concepts/Database_Replication_System_Design/Database_Replication_in_System_Design.md)**: Overview of database strategies & replication proces.
+
+
 
 ### System Design Case Studies
 - **[Design High Availability System](./Design_Case_Studies/Design_High_Availability_System/Design_High_Availability_System.md)**: Strategies for designing systems with high availability to maximize uptime and reliability.
