@@ -31,7 +31,7 @@ Welcome to the **System Design with Zeeshan Ali** repository! This collection is
 - **[Design Unique ID Generation](./Design_Case_Studies/Design_Unique_ID_Generation/Design_Unique_ID_Generation.md)**: Guide on designing a unique ID generation system, covering UUIDs, auto-incrementing IDs, and the Snowflake algorithm.
 - **[Design URL Shortener](./Design_Case_Studies/Design_URL_Shortening/URL_Shortening.md)**: System design for a URL shortener service, covering algorithms, API methods, and implementation.
 - **[Design Web Crawler](./Design_Case_Studies/Designing_Web_Crawler/Designing_a_Web_Crawler.md)**: System design for web crawlers, including components involved, FAQs, and best practices.
-- **[Polling System](./PollingSystem/)**: Low-level design of a polling system, including database schema, CRUD operations, and multiple implementation examples in C++ and JavaScript.
+- **[Polling System](./Design_Case_Studies/PollingSystem)**: Low-level design of a polling system, including database schema, CRUD operations, and multiple implementation examples in C++ and JavaScript.
 
 - **[Rate Limiter](./Design_Case_Studies/Rate_Limiter/Rate_Limiter.md)**: Complete system design for a rate limiter, covering algorithms, strategies, and use cases.
 - **[URL Working in Browser](./Network_and_Distributed_Systems/URL_Working_In_Browser/When%20you%20type%20a%20URL%20into%20a%20browser%20and%20press%20Enter.md)**: Explores what happens when a URL is entered into a browser, covering DNS resolution, TCP/IP connections, and the HTTP/HTTPS request/response cycle.
