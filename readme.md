@@ -1,94 +1,55 @@
-# System Design
+Here's an updated README with the detailed structure you provided:
 
-Welcome to my project repository! Here, you will find a curated collection of articles and resources dedicated to system design. This repository is built around the hashtag **#SystemDesignWithZeeshanAli**.
+---
+
+# System Design with Zeeshan Ali
+
+Welcome to the **System Design with Zeeshan Ali** repository! This collection is dedicated to in-depth articles and resources on system design, covering foundational concepts, architecture patterns, optimization techniques, and real-world case studies. Each section is carefully curated to provide clear explanations, practical examples, and best practices for building scalable, reliable, and efficient systems.
 
 - **GitHub**: [System Design with Zeeshan Ali](https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli)
 - **Dev.to**: [System Design with Zeeshan Ali](https://dev.to/t/systemdesignwithzeeshanali)
 
-## Folders
+---
 
-### [CAP Theorem](./CAP_Theorem/CAP_Theorem.md)
-- **Description**: A detailed explanation of the CAP theorem, discussing the trade-offs between consistency, availability, and partition tolerance in distributed systems. This folder includes practical examples and use cases.
+## Folder Structure
 
-### [Capacity Estimations](./Capacity_Estimations/)
-- **Description**: Techniques and methodologies for calculating traffic and storage estimations for a system, ensuring that it can handle the anticipated load effectively.
+### System Design Concepts
+- **[CAP Theorem](./CAP_Theorem/CAP_Theorem.md)**: Discusses the CAP theorem and the trade-offs between consistency, availability, and partition tolerance in distributed systems, with examples and use cases.
+- **[Capacity Estimations](./Capacity_Estimations/)**: Techniques and methodologies for calculating traffic and storage estimations to ensure system scalability.
+- **[CDNs (Content Delivery Networks)](./CDN/CDN.md)**: An in-depth look at how CDNs work and their role in improving content delivery and system performance.
+- **[Client-Server Architecture Pattern](./Client_Server_Architecture_Pattern/Client_Server_Architecture_Pattern.md)**: Explains the client-server model, detailing client-server interactions within a network.
+- **[DNS - The Domain Name System](./DNS/DNS.md)**: Exploration of DNS functionality, including DNS lookup, caching, and security aspects.
+- **[Hashing and Consistent Hashing](./Hashing_Consistent_Hashing/)**: Study of hashing techniques and consistent hashing with examples demonstrating applications in system design.
+- **[How to Store Passwords in a Database](./How_To_Store_Password_in_Database/How_To_Store_Password_in_Database.md)**: Best practices for secure password storage, covering hashing, salting, and other techniques.
+- **[HTTPS: How HTTPS Works - The HTTP Handshake](./Https_How_Https_Works/Https_How_Https_Works.md)**: Detailed explanation of the HTTPS protocol and the handshake process for secure data transmission.
+- **[Load Balancers](./Load_Balancers/Load_Balancer.md)**: Overview of load balancing, covering Layer 4 vs. Layer 7, load balancing algorithms, and practical examples.
+- **[Storage Concepts in System Design](./Storage_Concepts_in_System_Design/Storage_Concepts_in_System_Design.md)**: Overview of storage concepts, including databases, file systems, and caching mechanisms.
 
-### [CDNs (Content Delivery Networks)](./CDN/CDN.md)
-- **Description**: An in-depth look at Content Delivery Networks (CDNs), including what they are, how they work, and when they should be used to improve content delivery and system performance.
+### System Design Case Studies
+- **[Design High Availability System](./Design_High_Availability_System/Design_High_Availability_System.md)**: Strategies for designing systems with high availability to maximize uptime and reliability.
+- **[Design Instagram System](./Design_Instagram_System/Design_instagram.md)**: A full system design of Instagram, including system architecture, API implementation, and other components.
+- **[Design Key-Value Store](./Design_Key_Value_Store.md/)**: Complete design of a key-value store, covering data replication, partitioning, and fault tolerance.
+- **[Design Notification Alerting Service](./Design_notification_alerting_service/)**: System design for a notification service, including database schema, API implementation, and workflows.
+- **[Design PasteBin](./Design_PasteBin/Design_PasteBin.md)**: Full system design of a PasteBin service, covering algorithms, API methods, and implementation guidance.
+- **[Design Twitter](./Design_Twitter/Design_twitter.md)**: Full system design of Twitter, covering core algorithms, API methods, and implementation details.
+- **[Design Unique ID Generation](./Design_Unique_ID_Generation/Design_Unique_ID_Generation.md)**: Guide on designing a unique ID generation system, covering UUIDs, auto-incrementing IDs, and the Snowflake algorithm.
+- **[Design URL Shortener](./Design_URL_Shortening/URL_Shortening.md)**: System design for a URL shortener service, covering algorithms, API methods, and implementation.
+- **[Design Web Crawler](./Designing_Web_Crawler/Designing_a_Web_Crawler.md)**: System design for web crawlers, including components involved, FAQs, and best practices.
+- **[Polling System](./PollingSystem/)**: Low-level design of a polling system, including database schema, CRUD operations, and multiple implementation examples in C++ and JavaScript.
 
-### [Client-Server Architecture Pattern](./Client_Server_Architecture_Pattern/Client_Server_Architecture_Pattern.md)
-- **Description**: A comprehensive guide to the client-server architecture pattern, detailing how clients and servers interact within a network to deliver services.
+    - **[C++ Implementation](./PollingSystem/PollingSystemCPP)**
+    - **[JavaScript Class-Level Implementation](./PollingSystem/PollingSystemJS/PollingSystemInJS_Class_Level.md)**
+    - **[Node.js + MySQL Implementation](./PollingSystem/PollingSystemJS/PollingSystemInJS.md)**
+    - **[Edge Case Handling](./PollingSystem/PollingSystemJS/Edge-Case-Handling.md)**
+    
+- **[Rate Limiter](./Rate_Limiter/)**: Complete system design for a rate limiter, covering algorithms, strategies, and use cases.
+- **[URL Working in Browser](./URL_Working_In_Browser/)**: Explores what happens when a URL is entered into a browser, covering DNS resolution, TCP/IP connections, and the HTTP/HTTPS request/response cycle.
 
-### [Design High Availability System](./Design_High_Availability_System/Design_High_Availability_System.md)
-- **Description**: Strategies and best practices for designing systems with high availability, focusing on ensuring maximum uptime and reliability in various scenarios.
+### Architecture Patterns
+- **[Event-Driven Architecture Pattern](./Event_Driven_Architecture_Pattern/Event_Driven_Architecture_Pattern.md)**: Introduction to event-driven architecture, demonstrating how systems react to events in real-time.
+- **[Microservice Architecture](./Micro_Service_Architecture/)**: Overview of microservices, benefits, challenges, and comparison to monolithic architectures.
+- **[Serverless Architecture Pattern](./Serverless_Architecture_Pattern/Serverless_Architecture_Pattern.md)**: Explanation of serverless architecture, covering its core principles, benefits, and limitations.
+- **[What is Pub/Sub Architecture](./What_is_Pub_Sub_Architecture/What_is_Pub_Sub_Architecture.md)**: Overview of the Pub/Sub model, covering key components, use cases, and examples.
 
-### [Design Instagram System](./Design_Instagram_System/Deisgn_instagram.md)
-- **Description**: Complete system deisgn on Instagram. Detail System design Digram, API implementation & other related components details
-
-### [Design Key-Value Store](./Design_Key_Value_Store.md/)
-- **Description**: A complete system design of a key-value storage system, covering API methods, data replication, partitioning, fault tolerance, and other essential parameters.
-
-### [Design Notification Alerting Service](./Design_notification_alerting_service/)
-- **Description**: A detailed system design for a notification and alerting service. This documentation encompasses various components, database schema, API implementation, and use cases to illustrate functionality and workflows.
-
-### [Design PasteBin](./Design_PasteBin/Design_PasteBin.md)
-- **Description**: A full system design of a PasteBin service, including algorithms, API methods, and detailed implementation guidance.
-
-### [Design Twitter](./Design_Twitter/Design_twitter.md)
-- **Description**: A full system design of a Twitter service, including algorithms, API methods, and detailed implementation guidance.
-
-### [Design_Unique_ID_Generation](./Design_Unique_ID_Generation/Design_Unique_ID_Generation.md)
-- **Description**: A comprehensive guide on designing a unique ID generation system. This documentation covers various techniques for generating unique identifiers, including UUIDs, auto-incrementing IDs, and snowflake algorithms. It also discusses use cases, trade-offs, and performance considerations to ensure efficient and reliable ID generation in distributed systems.
-
-### [Design URL Shortener](./Design_URL_Shortening/URL_Shortening.md)
-- **Description**: Comprehensive system design for a URL shortener service, covering the algorithms, API methods, and implementation details.
-
-### [Design Web Crawler](./Designing_Web_Crawler/Designing_a_Web_Crawler.md)
-- **Description**: A complete system design for web crawlers, including the components involved, common FAQs, and best practices.
-
-### [DNS - The Domain Name System](./DNS/DNS.md)
-- **Description**: A detailed exploration of the Domain Name System (DNS), including its functionality, how DNS servers work, DNS lookup, caching, security, and more.
-
-### [Event-Driven Architecture Pattern](./Event_Driven_Architecture_Pattern/Event_Driven_Architecture_Pattern.md)
-- **Description**: An introduction to the event-driven architecture pattern, explaining how systems can react to events in real-time to improve responsiveness, scalability, and flexibility.
-
-### [Hashing and Consistent Hashing](./Hashing_Consistent_Hashing/)
-- **Description**: An in-depth study of hashing techniques and consistent hashing, with practical examples demonstrating their application in system design.
-
-### [High-Level System Design](./High_Level_System_Design/High_Level_System_Design.md)
-- **Description**: An overview of the fundamental components and their interactions within a system, providing a high-level understanding of system design.
-
-### [How to Store Passwords in a Database](./How_To_Store_Password_in_Database/How_To_Store_Password_in_Database.md)
-- **Description**: Best practices for securely storing passwords in databases, including hashing algorithms, salting techniques, and other security measures.
-
-### [HTTPS: How HTTPS Works - The HTTP Handshake](./Https_How_Https_Works/Https_How_Https_Works.md)
-- **Description**: A detailed explanation of the HTTPS protocol and the handshake process that ensures secure data transmission between a client and a server.
-
-### [Load Balancers](./Load_Balancers/Load_Balancer.md)
-- **Description**: A comprehensive guide to load balancers, including the differences between Layer 4 and Layer 7, types of algorithms, and practical examples.
-
-### [Microservice Architecture](./Micro_Service_Architecture/)
-- **Description**: An overview of the microservice architecture pattern, discussing its benefits, challenges, and how it compares to monolithic architectures.
-
-### [Polling System](./PollingSystem/)
-- **Description**: A comprehensive low-level design of a polling system and its associated methods. It includes database design and CRUD operations on polls.
-    - [Basic Class-Level Implementation in C++](./PollingSystem/PollingSystemCPP)
-    - [Basic Class-Level Implementation in JavaScript](./PollingSystem/PollingSystemJS/PollingSystemInJS_Class_Level.md)
-    - [Node.js + API + MySQL Implementation in JavaScript](./PollingSystem/PollingSystemJS/PollingSystemInJS.md)
-    - [Advanced Use Cases - Edge Case Handling](./PollingSystem/PollingSystemJS/Edge-Case-Handling.md)
-
-
-### [Rate Limiter](./Rate_Limiter/)
-- **Description**: A complete system design for implementing a rate limiter, including the algorithms, strategies, and use cases.
-
-### [Serverless Architecture Pattern](./Serverless_Architecture_Pattern/Serverless_Architecture_Pattern.md)
-- **Description**: An introduction to the serverless architecture pattern, explaining its core principles, when to use it, and its advantages and disadvantages.
-
-### [Storage Concepts in System Design](./Storage_Concepts_in_System_Design/Storage_Concepts_in_System_Design.md)
-- **Description**: An overview of various storage concepts in system design, including databases, file systems, caching mechanisms, and their applications.
-
-### [URL Working in Browser](./URL_Working_In_Browser/)
-- **Description**: An exploration of what happens when a URL is entered into a browser, covering DNS resolution, TCP/IP connections, the HTTP/HTTPS request/response cycle, and more.
-
-### [What is Pub sub Architecture](./What_is_Pub_Sub_Architecture/What_is_Pub_Sub_Architecture.md)
-- **Description**: A comprehensive overview of the Pub/Sub model, including its key components, practical use cases, and illustrative examples to demonstrate its functionality and applications.
+### Optimization and Security
+- **[Front End Optimization](./Front_End_Optimization/)**: Techniques to improve the performance and efficiency of front-end systems.
