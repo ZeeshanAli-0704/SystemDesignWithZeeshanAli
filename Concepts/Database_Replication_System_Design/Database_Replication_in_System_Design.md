@@ -8,8 +8,8 @@ Database replication is essential in system design to ensure data availability, 
 
 ---
 
-1. [What is Database Replication?](#what-is-database-replication)
-2. [Why Do We Need Database Replication?](#why-do-we-need-database-replication)
+1. [What is Database Replication](#what-is-database-replication)
+2. [Why Do We Need Database Replication](#why-do-we-need-database-replication)
 3. [Types of Database Replication](#types-of-database-replication)
    - [Master-Slave Replication](#master-slave-replication)
    - [Master-Master Replication](#master-master-replication)
@@ -33,7 +33,7 @@ Database replication is essential in system design to ensure data availability, 
 ---
 
 
-### 1. What is Database Replication?
+### 1. What is Database Replication
 
 Database replication is the process of creating and managing duplicate copies of a database on separate servers. This technique ensures that the data is accessible even if one server fails and that data is recoverable in case of corruption or loss. Replication also enables data distribution across multiple servers, balancing the workload and improving system scalability.
 

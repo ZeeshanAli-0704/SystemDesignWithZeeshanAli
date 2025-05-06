@@ -10,17 +10,22 @@ Welcome to the **System Design with Zeeshan Ali** repository! This collection is
 ## Folder Structure
 
 ### System Design Concepts
-- **[CAP Theorem](./Concepts//CAP_Theorem/CAP_Theorem.md)**: Discusses the CAP theorem and the trade-offs between consistency, availability, and partition tolerance in distributed systems, with examples and use cases.
+- **[Apache Zookeeper](./Concepts/Apache_Zookeeper/Apache_Zookeeper.md)**: Apache ZooKeeper features, How Zookeeper Works & benifits
+- **[Cache Eviction Policies](./Concepts/Cache_Eviction_Policies/cache-eviction-policies-system-design.md)**: Cache eviction policies define the rules for deciding which data to remove when the cache reaches its storage limit. Types of Cache Eviction Polices 
+- **[CAP Theorem](./Concepts/CAP_Theorem/CAP_Theorem.md)**: Discusses the CAP theorem and the trade-offs between consistency, availability, and partition tolerance in distributed systems, with examples and use cases.
 - **[Capacity Estimations](./Concepts/Capacity_Estimations/Capacity%20Estimation%20Details.md)**: Techniques and methodologies for calculating traffic and storage estimations to ensure system scalability.
 - **[CDNs (Content Delivery Networks)](./Network_and_Distributed_Systems/CDN/CDN.md)**: An in-depth look at how CDNs work and their role in improving content delivery and system performance.
 - **[Client-Server Architecture Pattern](./Architecture_Patterns/Client_Server_Architecture_Pattern//Client%20Server%20Architecture%20Pattern.md)**: Explains the client-server model, detailing client-server interactions within a network.
 - **[DNS - The Domain Name System](./Network_and_Distributed_Systems/DNS/DNS.md)**: Exploration of DNS functionality, including DNS lookup, caching, and security aspects.
+- **[Database Replication System Design](./Concepts/Database_Replication_System_Design/Database_Replication_in_System_Design.md)**: Overview of database strategies & replication proces
 - **[Hashing and Consistent Hashing](./Concepts/Hashing_Consistent_Hashing)**: Study of hashing techniques and consistent hashing with examples demonstrating applications in system design.
 - **[How to Store Passwords in a Database](./Security_and_Best_Practices/How_To_Store_Password_in_Database/How_To_Store_Password_in_Database.md)**: Best practices for secure password storage, covering hashing, salting, and other techniques.
 - **[HTTPS: How HTTPS Works - The HTTP Handshake](./Security_and_Best_Practices//Https_How_Https_Works/Https_How_Https_Works.md)**: Detailed explanation of the HTTPS protocol and the handshake process for secure data transmission.
 - **[Load Balancers](./Concepts/Load_Balancers/Load_Balancer.md)**: Overview of load balancing, covering Layer 4 vs. Layer 7, load balancing algorithms, and practical examples.
+- **[Rate_limiting](./Concepts/Rate_limiting/Rate_limiting.md)**: Rate limiting is a critical aspect of system design to ensure fair usage, prevent abuse, and maintain system stability.
+- **[Redis](./Concepts/Redis_and_its_role_in_System_Design/Redis_and_its_role_in_System_Design.md)**:Redis (Remote Dictionary Server) is an open-source, in-memory data structure store that can function as a database, cache, and message broker. Known for its speed and efficiency, Redis supports various data structures like strings, hashes, lists, sets, and more
 - **[Storage Concepts in System Design](./Concepts/Storage_Concepts_in_System_Design/Storage_Concepts_in_System_Design.md)**: Overview of storage concepts, including databases, file systems, and caching mechanisms.
-- **[Database Replication System Design](./Concepts/Database_Replication_System_Design/Database_Replication_in_System_Design.md)**: Overview of database strategies & replication proces.
+- **[Types Api Testing](./Concepts/Types_of_Api_Testing/Types_of_Api_Testing.md)**: Application Programming Interfaces (APIs) are the backbone of modern software architecture, allowing systems to communicate and share data seamlessly.
 
 
 
@@ -30,6 +35,7 @@ Welcome to the **System Design with Zeeshan Ali** repository! This collection is
 - **[Design Key-Value Store](./Design_Case_Studies/Design_Key_Value_Store.md/)**: Complete design of a key-value store, covering data replication, partitioning, and fault tolerance.
 - **[Design Notification Alerting Service](./Design_Case_Studies/Design_notification_alerting_service/)**: System design for a notification service, including database schema, API implementation, and workflows.
 - **[Design PasteBin](./Design_Case_Studies/Design_PasteBin/Design_PasteBin.md)**: Full system design of a PasteBin service, covering algorithms, API methods, and implementation guidance.
+- **[Design Spotify Top K](./Design_Case_Studies/Design_Spotify_Top_K/Design_Spotify_Top_K.md)**: Spotify System Design 
 - **[Design Twitter](./Design_Case_Studies/Design_Twitter/Design_twitter.md)**: Full system design of Twitter, covering core algorithms, API methods, and implementation details.
 - **[Design Unique ID Generation](./Design_Case_Studies/Design_Unique_ID_Generation/Design_Unique_ID_Generation.md)**: Guide on designing a unique ID generation system, covering UUIDs, auto-incrementing IDs, and the Snowflake algorithm.
 - **[Design URL Shortener](./Design_Case_Studies/Design_URL_Shortening/URL_Shortening.md)**: System design for a URL shortener service, covering algorithms, API methods, and implementation.
