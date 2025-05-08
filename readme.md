@@ -21,8 +21,10 @@ Welcome to the **System Design with Zeeshan Ali** repository! This collection is
 - **[Hashing and Consistent Hashing](./Concepts/Hashing_Consistent_Hashing)**: Study of hashing techniques and consistent hashing with examples demonstrating applications in system design.
 - **[How to Store Passwords in a Database](./Security_and_Best_Practices/How_To_Store_Password_in_Database/How_To_Store_Password_in_Database.md)**: Best practices for secure password storage, covering hashing, salting, and other techniques.
 - **[HTTPS: How HTTPS Works - The HTTP Handshake](./Security_and_Best_Practices//Https_How_Https_Works/Https_How_Https_Works.md)**: Detailed explanation of the HTTPS protocol and the handshake process for secure data transmission.
-- **[Load Balancers](./Concepts/Load_Balancers/Load_Balancer.md)**: Overview of load balancing, covering Layer 4 vs. Layer 7, load balancing algorithms, and practical examples.
-- **[Rate_limiting](./Concepts/Rate_limiting/Rate_limiting.md)**: Rate limiting is a critical aspect of system design to ensure fair usage, prevent abuse, and maintain system stability.
+- **[Kafka](./Concepts/Kafka/Kafka.md)**: open-source distributed event streaming platform
+- **[Load Balancers](./Concepts/Load_Balancers/Load_Balancer.md)**: Overview of load 
+balancing, covering Layer 4 vs. Layer 7, load balancing algorithms, and practical examples.
+- **[Memory Management](./Concepts/Memory_Management/Memory_Management.md)**: Javascript Memory Management
 - **[Redis](./Concepts/Redis_and_its_role_in_System_Design/Redis_and_its_role_in_System_Design.md)**:Redis (Remote Dictionary Server) is an open-source, in-memory data structure store that can function as a database, cache, and message broker. Known for its speed and efficiency, Redis supports various data structures like strings, hashes, lists, sets, and more
 - **[Storage Concepts in System Design](./Concepts/Storage_Concepts_in_System_Design/Storage_Concepts_in_System_Design.md)**: Overview of storage concepts, including databases, file systems, and caching mechanisms.
 - **[Types Api Testing](./Concepts/Types_of_Api_Testing/Types_of_Api_Testing.md)**: Application Programming Interfaces (APIs) are the backbone of modern software architecture, allowing systems to communicate and share data seamlessly.
