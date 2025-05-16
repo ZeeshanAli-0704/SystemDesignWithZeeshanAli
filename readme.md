@@ -48,6 +48,10 @@ balancing, covering Layer 4 vs. Layer 7, load balancing algorithms, and practica
 - **[URL Working in Browser](./Network_and_Distributed_Systems/URL_Working_In_Browser/When%20you%20type%20a%20URL%20into%20a%20browser%20and%20press%20Enter.md)**: Explores what happens when a URL is entered into a browser, covering DNS resolution, TCP/IP connections, and the HTTP/HTTPS request/response cycle.
 
 ### Architecture Patterns
+- **[Client Server Architecture Pattern](./Architecture_Patterns/Client_Server_Architecture_Pattern/Client%20Server%20Architecture%20Pattern.md)**: Introduction to client server pattern
+
+- **[Dessign_Pattern_Example](./Architecture_Patterns/Design_Pattern_Example/Mastering_Design_Patterns_JavaScript.md)**: Design Pattern Singleton, Factory, Facade, Observer, etc with example
+
 - **[Event-Driven Architecture Pattern](./Architecture_Patterns/Event_Driven_Architecture_Pattern/Event_Driven_Architecture_Pattern.md)**: Introduction to event-driven architecture, demonstrating how systems react to events in real-time.
 - **[Microservice Architecture](./Architecture_Patterns/Micro_Service_Architecture/Micro_Service.md)**: Overview of microservices, benefits, challenges, and comparison to monolithic architectures.
 - **[Serverless Architecture Pattern](./Architecture_Patterns/Serverless_Architecture_Pattern/Serverless_Architecture_Pattern.md)**: Explanation of serverless architecture, covering its core principles, benefits, and limitations.
