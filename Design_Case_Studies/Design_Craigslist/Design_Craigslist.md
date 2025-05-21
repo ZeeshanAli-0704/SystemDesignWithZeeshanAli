@@ -1,12 +1,14 @@
 
 ## 📚 Table of Contents
 
-1. [Understanding the Craigslist-like Classifieds Platform Design](#understanding-the-craigslist-like-classifieds-platform-design)
+1. [Understanding the Craigslist like Classifieds Platform Design](#understanding-the-craigslist-like-classifieds-platform-design)
+
 2. [Functional Requirements Analysis](#functional-requirements-analysis)
    2.1. [User Types](#user-types)
    2.2. [Listing Details](#listing-details)
    2.3. [Filters](#filters)
-3. [Non-Functional Requirements](#non-functional-requirements)
+
+3. [Non Functional Requirements](#non-functional-requirements)
 4. [System Capacity Planning](#system-capacity-planning)
    4.1. [Key Assumptions](#key-assumptions)
    4.2. [Post Volume](#post-volume)
@@ -39,7 +41,7 @@
     10.5. [Object Storage Organization](#object-storage-organization)
     10.6. [CDN and GeoDNS Implementation](#cdn-and-geodns-implementation)
     10.7. [Request Routing Logic](#request-routing-logic)
-    10.8. [Real-World Example](#real-world-example)
+    10.8. [Real World Example](#real-world-example)
     10.9. [Implementation Challenges](#implementation-challenges)
 11. [Search Design](#search-design)
     11.1. [Document Structure](#document-structure)
@@ -49,14 +51,14 @@
 13. [Key Design Decisions Explained](#key-design-decisions-explained)
     13.1. [Why Use a Hybrid Upload Strategy?](#why-use-a-hybrid-upload-strategy)
     13.2. [Why Geographic Partitioning?](#why-geographic-partitioning)
-    13.3. [Why 7-Day Auto-Expiration?](#why-7-day-auto-expiration)
-    13.4. [Why Object Storage + CDN for Images?](#why-object-storage--cdn-for-images)
+    13.3. [Why 7 Day Auto Expiration?](#why-7-day-auto-expiration)
+    13.4. [Why Object Storage and CDN for Images?](#why-object-storage-and-cdn-for-images)
 14. [Summary](#summary)
 
 
 
 
-# Understanding the Craigslist-like Classifieds Platform Design
+# Understanding the Craigslist like Classifieds Platform Design
 
 The document outlines a comprehensive system design for a Craigslist-style classifieds platform that allows users to post, browse, and respond to classified listings. Let me walk through each major component in detail.
 
@@ -95,7 +97,7 @@ The system supports filtering by:
 - Item condition: Categorical value (like new, good, fair, etc.)
 - The design allows for additional filters based on user/application needs
 
-## Non-Functional Requirements
+## Non Functional Requirements
 
 These requirements define the quality attributes of the system:
 
@@ -400,7 +402,7 @@ The system determines which region's data to access using multiple methods:
 - **Load Balancer**: Distributes traffic across servers within a region
 - **Service Discovery**: Maintains registry of available services by region
 
-### Real-World Example
+### Real World Example
 
 When a user in San Francisco searches for "used bicycle under $200":
 
@@ -460,10 +462,10 @@ The hybrid approach balances control and scalability. By having the backend mana
 ### Why Geographic Partitioning?
 Most classified listings are location-specific, with users typically searching within their own city or region. Geographic partitioning aligns the data storage with this usage pattern, improving performance and reducing query scope.
 
-### Why 7-Day Auto-Expiration?
+### Why 7 Day Auto Expiration?
 This policy keeps content fresh and significantly reduces storage requirements. Without this limitation, the storage needs would grow unbounded over time.
 
-### Why Object Storage + CDN for Images?
+### Why Object Storage and CDN for Images?
 With 700TB of image data and 40,000 image requests per second at peak, traditional file storage would be inadequate. Object storage offers cost-effective scalability, while CDNs provide low-latency global delivery.
 
 ## Summary
@@ -477,3 +479,28 @@ This Craigslist-like system design demonstrates careful consideration of:
 5. **Evolution path**: Starting simple and evolving to microservices as needed
 
 The design balances technical sophistication with practical implementation concerns, providing a solid foundation for a large-scale classifieds platform.
+
+Design with Read & write Replicas
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lh8l8ixqgumh4oomcuw8.png)
+
+Design with Search Engine
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fb2jwt9ip9j94zotayr0.png)
+
+[CDN for Large-Scale Image](https://dev.to/zeeshanali0704/cdn-for-large-scale-image-handling-in-classified-platforms-1mi6)
+
+
+**In Progress**
+
+[Implementation Details](https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli/blob/main/Design_Case_Studies/Design_Craigslist/implementation.java)
+
+
+More Details:
+
+Get all articles related to system design 
+Hastag: SystemDesignWithZeeshanAli
+
+
+[systemdesignwithzeeshanali](https://dev.to/t/systemdesignwithzeeshanali)
+
+Git: https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli
