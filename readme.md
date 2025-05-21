@@ -32,6 +32,7 @@ balancing, covering Layer 4 vs. Layer 7, load balancing algorithms, and practica
 
 
 ### System Design Case Studies
+- **[Design_Craigslist](./Design_Case_Studies/Design_Craigslist/Design_Craigslist.md)**: The document outlines a comprehensive system design for a Craigslist-style classifieds platform that allows users to post, browse, and respond to classified listings.
 - **[Design High Availability System](./Design_Case_Studies/Design_High_Availability_System/Design_High_Availability_System.md)**: Strategies for designing systems with high availability to maximize uptime and reliability.
 - **[Design Instagram System](./Design_Case_Studies/Design_Instagram_System/Design_instagram.md)**: A full system design of Instagram, including system architecture, API implementation, and other components.
 - **[Design Key-Value Store](./Design_Case_Studies/Design_Key_Value_Store.md/)**: Complete design of a key-value store, covering data replication, partitioning, and fault tolerance.
