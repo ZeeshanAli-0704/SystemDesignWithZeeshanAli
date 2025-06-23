@@ -51,7 +51,7 @@ balancing, covering Layer 4 vs. Layer 7, load balancing algorithms, and practica
 ### Architecture Patterns
 - **[Client Server Architecture Pattern](./Architecture_Patterns/Client_Server_Architecture_Pattern/Client%20Server%20Architecture%20Pattern.md)**: Introduction to client server pattern
 
-- **[Dessign_Pattern_Example](./Architecture_Patterns/Design_Pattern_Example/Mastering_Design_Patterns_JavaScript.md)**: Design Pattern Singleton, Factory, Facade, Observer, etc with example
+- **[Dessign_Pattern_Example](./Architecture_Patterns/Design_Pattern_Example/Mastering_Design_Patterns_JavaScript.md)**: Design Pattern Singleton, Factory, Facade, Observer, Builder, Adapter, Iterator etc with example
 
 - **[Event-Driven Architecture Pattern](./Architecture_Patterns/Event_Driven_Architecture_Pattern/Event_Driven_Architecture_Pattern.md)**: Introduction to event-driven architecture, demonstrating how systems react to events in real-time.
 - **[Microservice Architecture](./Architecture_Patterns/Micro_Service_Architecture/Micro_Service.md)**: Overview of microservices, benefits, challenges, and comparison to monolithic architectures.
