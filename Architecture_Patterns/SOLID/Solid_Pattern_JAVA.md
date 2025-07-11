@@ -259,7 +259,3 @@ By consistently applying the **SOLID principles**, you’ll write JavaScript cod
 📁 GitHub: [SystemDesignWithZeeshanAli Repository](https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli)
 
 ![SOLID Principles](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kehpoavvm5b1sjf49849.png)
-
----
-
-Let me know if you’d like a **JavaScript version** of all code examples too, or a **series** post format with one principle per article!

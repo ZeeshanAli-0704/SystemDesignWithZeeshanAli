@@ -169,5 +169,5 @@ Git: https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli
 * 👀 [Observer Design Pattern in Java – Complete Guide](https://dev.to/zeeshanali0704/observer-design-pattern-in-java-complete-guide-1pe7)
 * 🔌 [Adapter Design Pattern in Java – A Complete Guide](https://dev.to/zeeshanali0704/adapter-design-pattern-in-java-a-complete-guide-4aa2)
 * 🔁 [Iterator Design Pattern in Java – Complete Guide](https://dev.to/zeeshanali0704/iterator-design-pattern-in-java-complete-guide-34fh)
-
+* 🔌 [Strategy Design Pattern in Java – A Complete Guide](https://dev.to/zeeshanali0704/strategy-design-pattern-in-java-a-complete-guide-3hjn)
 ---
