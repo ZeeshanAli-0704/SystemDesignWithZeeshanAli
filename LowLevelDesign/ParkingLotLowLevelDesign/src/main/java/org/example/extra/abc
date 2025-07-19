@@ -1,0 +1,255 @@
+// === Updated ParkingLot.java with DisplayBoard and Admin Operations ===
+package com.parkinglot.models;
+
+import com.parkinglot.enums.*;
+import com.parkinglot.services.DisplayBoard;
+import com.parkinglot.services.ParkingStrategy;
+
+import java.util.*;
+
+public class ParkingLot {
+    private String id;
+    private List<Floor> floors;
+    private ParkingStrategy strategy;
+    private List<Entrance> entrances;
+    private List<Exit> exits;
+    private DisplayBoard displayBoard;
+
+    public ParkingLot(String id, ParkingStrategy strategy) {
+        this.id = id;
+        this.strategy = strategy;
+        this.floors = new ArrayList<>();
+        this.entrances = new ArrayList<>();
+        this.exits = new ArrayList<>();
+        this.displayBoard = new DisplayBoard();
+    }
+
+    public void addFloor(Floor floor) {
+        floors.add(floor);
+        updateDisplay();
+    }
+
+    public void addEntrance(Entrance entrance) {
+        entrances.add(entrance);
+    }
+
+    public void removeEntrance(String id) {
+        entrances.removeIf(e -> e.getId().equals(id));
+    }
+
+    public void addExit(Exit exit) {
+        exits.add(exit);
+    }
+
+    public void removeExit(String id) {
+        exits.removeIf(e -> e.getId().equals(id));
+    }
+
+    public ParkingSpot getAvailableSpot(Vehicle vehicle, ParkingPreferences prefs) {
+        return strategy.findSpot(floors, vehicle, prefs);
+    }
+
+    public void updateDisplay() {
+        displayBoard.reset();
+        for (Floor floor : floors) {
+            for (ParkingSpot spot : floor.getAllSpots()) {
+                if (spot.isAvailable()) {
+                    displayBoard.increment(spot.getType());
+                }
+            }
+        }
+        displayBoard.show();
+    }
+}
+
+// === DisplayBoard.java ===
+package com.parkinglot.services;
+
+import com.parkinglot.enums.ParkingSpotType;
+
+import java.util.EnumMap;
+
+public class DisplayBoard {
+    private EnumMap<ParkingSpotType, Integer> availability;
+
+    public DisplayBoard() {
+        availability = new EnumMap<>(ParkingSpotType.class);
+        for (ParkingSpotType type : ParkingSpotType.values()) {
+            availability.put(type, 0);
+        }
+    }
+
+    public void increment(ParkingSpotType type) {
+        availability.put(type, availability.get(type) + 1);
+    }
+
+    public void reset() {
+        for (ParkingSpotType type : ParkingSpotType.values()) {
+            availability.put(type, 0);
+        }
+    }
+
+    public void show() {
+        System.out.println("\n=== Display Board ===");
+        for (ParkingSpotType type : ParkingSpotType.values()) {
+            System.out.println(type + ": " + availability.get(type));
+        }
+    }
+}
+
+// === Update Entrance.java and Exit.java to include getId() ===
+// Add this method to both classes
+public String getId() {
+    return id;
+}
+
+
+// === Main.java ===
+package com.parkinglot;
+
+import com.parkinglot.models.*;
+        import com.parkinglot.services.*;
+        import com.parkinglot.enums.*;
+
+        import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        ParkingLot lot = new ParkingLot("LotA", new NearestFirstStrategy());
+
+        Floor floor0 = new Floor(0);
+        floor0.addSpot(new MiniSpot("M0_1"));
+        floor0.addSpot(new CompactSpot("C0_1", true, false));
+        floor0.addSpot(new LargeSpot("L0_1", true, true));
+        lot.addFloor(floor0);
+
+        Entrance entrance = new Entrance("E1", new TicketService());
+        lot.addEntrance(entrance);
+
+        Vehicle car = new Car("DL01AB1234");
+        ParkingPreferences prefs = new ParkingPreferences(true, true);
+        Ticket ticket = entrance.generateTicket(car, prefs, lot);
+        System.out.println("Ticket Issued: " + ticket);
+
+        Exit exit = new Exit("X1", new PaymentService());
+        lot.addExit(exit);
+
+        Receipt receipt = exit.processExit(ticket, PaymentMethod.UPI);
+        System.out.println("Receipt: " + receipt);
+    }
+}
+
+// === Vehicle.java ===
+package com.parkinglot.models;
+
+import com.parkinglot.enums.VehicleType;
+
+public abstract class Vehicle {
+    protected String licenseNumber;
+    protected VehicleType type;
+
+    public Vehicle(String licenseNumber, VehicleType type) {
+        this.licenseNumber = licenseNumber;
+        this.type = type;
+    }
+
+    public String getLicenseNumber() {
+        return licenseNumber;
+    }
+
+    public VehicleType getType() {
+        return type;
+    }
+
+    public String toString() {
+        return type + " - " + licenseNumber;
+    }
+}
+
+class Car extends Vehicle {
+    public Car(String licenseNumber) {
+        super(licenseNumber, VehicleType.CAR);
+    }
+}
+
+class Motorbike extends Vehicle {
+    public Motorbike(String licenseNumber) {
+        super(licenseNumber, VehicleType.MOTORBIKE);
+    }
+}
+
+class Truck extends Vehicle {
+    public Truck(String licenseNumber) {
+        super(licenseNumber, VehicleType.TRUCK);
+    }
+}
+
+// === ParkingSpot.java ===
+package com.parkinglot.models;
+
+import com.parkinglot.enums.ParkingSpotType;
+
+public abstract class ParkingSpot {
+    protected String id;
+    protected boolean isOccupied;
+    protected boolean hasCharger;
+    protected boolean hasCarWash;
+    protected ParkingSpotType type;
+    protected Vehicle currentVehicle;
+
+    public ParkingSpot(String id, ParkingSpotType type, boolean hasCharger, boolean hasCarWash) {
+        this.id = id;
+        this.type = type;
+        this.hasCharger = hasCharger;
+        this.hasCarWash = hasCarWash;
+        this.isOccupied = false;
+    }
+
+    public boolean canFitVehicle(Vehicle vehicle) {
+        return !isOccupied;
+    }
+
+    public void assignVehicle(Vehicle vehicle) {
+        this.currentVehicle = vehicle;
+        this.isOccupied = true;
+    }
+
+    public void removeVehicle() {
+        this.currentVehicle = null;
+        this.isOccupied = false;
+    }
+
+    public boolean isAvailable() {
+        return !isOccupied;
+    }
+
+    public ParkingSpotType getType() {
+        return type;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String toString() {
+        return id + " (" + type + ")";
+    }
+}
+
+class MiniSpot extends ParkingSpot {
+    public MiniSpot(String id) {
+        super(id, ParkingSpotType.MINI, false, false);
+    }
+}
+
+class CompactSpot extends ParkingSpot {
+    public CompactSpot(String id, boolean charger, boolean wash) {
+        super(id, ParkingSpotType.COMPACT, charger, wash);
+    }
+}
+
+class LargeSpot extends ParkingSpot {
+    public LargeSpot(String id, boolean charger, boolean wash) {
+        super(id, ParkingSpotType.LARGE, charger, wash);
+    }
+}
