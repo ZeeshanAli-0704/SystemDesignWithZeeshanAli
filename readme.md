@@ -1,8 +1,3 @@
-Perfect 👍 now that your README structure is stable, I’ll enrich it by adding **short descriptions** to each section/folder, just like you did for *Blob Storage* and *Bloom Filters*.
-
-Here’s your **updated README with descriptions added**:
-
----
 
 # System Design with Zeeshan Ali
 
