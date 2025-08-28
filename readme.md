@@ -16,7 +16,7 @@ Welcome to the **System Design with Zeeshan Ali** repository! This collection is
 * **[Blob Storage](./Concepts/BlobStorage/)**: Explanation of Blob Storage, use cases, and benefits in cloud systems.
 * **[Bloom Filters](./Concepts/BloomFilters/)**: Deep dive into Bloom Filters, counting Bloom filters, and Cuckoo filters with practical examples.
 * **[Cache Eviction Policies](./Concepts/Cache_Eviction_Policies/cache-eviction-policies-system-design.md)**
-* **[CAP Theorem](./Concepts/CAP_Theorem/CAP%20Theorem:%20Principles,%20Real-World%20Scenarios,%20and%20Database%20Trade-offs.md)**
+* **[CAP Theorem](./Concepts/CAP_Theorem/)**
 * **[Capacity Estimations](./Concepts/Capacity_Estimations/Capacity%20Estimation%20Details.md)**
 * **[CDNs (Content Delivery Networks)](./Network_and_Distributed_Systems/CDN/CDN.md)**
 * **[Client-Server Architecture Pattern](./Architecture_Patterns/Client_Server_Architecture_Pattern//Client%20Server%20Architecture%20Pattern.md)**
