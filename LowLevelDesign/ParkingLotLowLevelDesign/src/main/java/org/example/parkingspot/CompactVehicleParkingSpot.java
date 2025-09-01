@@ -8,10 +8,7 @@ public class CompactVehicleParkingSpot extends AbstractParkingSpot {
         super(floor, dist);
     }
 
-    @Override
-    public void occupy(VehicleType vehicleType) {
-        if (vehicleType == VehicleType.COMPACT) {
-            isOccupied = true;
-        }
-    }
+    protected boolean isCompatible(VehicleType vehicleType) {
+        return vehicleType == VehicleType.MINI;
+    };
 }

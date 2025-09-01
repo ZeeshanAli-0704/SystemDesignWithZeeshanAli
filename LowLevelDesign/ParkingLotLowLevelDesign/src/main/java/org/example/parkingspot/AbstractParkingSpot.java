@@ -1,5 +1,7 @@
 package org.example.parkingspot;
 
+import org.example.domain.model.enums.VehicleType;
+
 import java.util.UUID;
 
 public abstract class AbstractParkingSpot implements ParkingSpot {
@@ -7,7 +9,6 @@ public abstract class AbstractParkingSpot implements ParkingSpot {
     protected final String spotId;
     protected boolean isOccupied;
     protected int floorNumber;
-    protected int price;
     protected int distanceFromEntrance;
 
     public AbstractParkingSpot(int floorNumber, int distanceFromEntrance) {
@@ -40,6 +41,18 @@ public abstract class AbstractParkingSpot implements ParkingSpot {
     @Override
     public String getSpotId() {
         return spotId;
+    };
+
+
+    protected abstract boolean isCompatible(VehicleType vehicleType);
+
+    @Override
+    public synchronized boolean tryOccupy(VehicleType vehicleType){
+        if (!isOccupied && isCompatible(vehicleType)) {
+            isOccupied = true;
+            return true;
+        }
+        return false;
     };
 
     @Override

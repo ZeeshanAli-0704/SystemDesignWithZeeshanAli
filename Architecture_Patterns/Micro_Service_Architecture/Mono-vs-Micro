@@ -1,0 +1,126 @@
+ V = 6, Edges = {{3, 2, 6}, {5, 3, 1}, {0, 1, 5}, {1, 5, -3}, {1, 2, -2}, {3, 4, -2}, {2, 4, 3}}, S = 0<mxfile host="app.diagrams.net">
+  <diagram name="Architecture" id="X7MWASxM_kERoO75wIqM">
+    <mxGraphModel dx="889" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Titles -->
+        <mxCell id="title1" value="Monolithic Structure of Ride-Sharing App" style="text;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="70" y="20" width="320" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="title2" value="Microservices Structure of Ride-Sharing App" style="text;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="530" y="20" width="360" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- MONOLITHIC -->
+        <mxCell id="monolith" value="Core Application&#xa;• Passenger Management&#xa;• Driver Management&#xa;• Trip Management&#xa;• Billing&#xa;• Payment&#xa;• Notification" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6fa" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="240" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="monolithMobile" value="Mobile App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1eaff" vertex="1" parent="1">
+          <mxGeometry x="30" y="160" width="70" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="monolithWeb" value="Web App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1eaff" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="70" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="monolithDB" value="Database Adapter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d3ffd3" vertex="1" parent="1">
+          <mxGeometry x="290" y="40" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="monolithSMS" value="SMS Adapter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffd3d3" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="monolithPay" value="Payment Adapter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7d3" vertex="1" parent="1">
+          <mxGeometry x="350" y="150" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="monolithEmail" value="Email Adapter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3d3ff" vertex="1" parent="1">
+          <mxGeometry x="110" y="40" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="passenger" value="Passenger" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="10" y="90" width="60" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="driver" value="Driver" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="10" y="210" width="60" height="40" as="geometry"/>
+        </mxCell>
+        <!-- MONOLITHIC Edges -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#666666" edge="1" parent="1" source="passenger" target="monolithMobile">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#666666" edge="1" parent="1" source="driver" target="monolithMobile">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" style="endArrow=block" edge="1" parent="1" source="monolithMobile" target="monolith">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" style="endArrow=block" edge="1" parent="1" source="monolithWeb" target="monolith">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" style="endArrow=block" edge="1" parent="1" source="monolith" target="monolithDB">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" style="endArrow=block" edge="1" parent="1" source="monolith" target="monolithPay">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" style="endArrow=block" edge="1" parent="1" source="monolith" target="monolithSMS">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" style="endArrow=block" edge="1" parent="1" source="monolith" target="monolithEmail">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- MICROSERVICES -->
+        <mxCell id="msAPIGW" value="API Gateway" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6e6;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="620" y="70" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="msPassengerUI" value="Passenger UI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1eaff" vertex="1" parent="1">
+          <mxGeometry x="530" y="40" width="70" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="msDriverUI" value="Driver UI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1eaff" vertex="1" parent="1">
+          <mxGeometry x="720" y="40" width="70" height="40" as="geometry"/>
+        </mxCell>
+        <!-- Services as hexagons -->
+        <mxCell id="msPassenger" value="Passenger Service" style="shape=hexagon;whiteSpace=wrap;html=1;fillColor=#e6ffe6" vertex="1" parent="1">
+          <mxGeometry x="530" y="130" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="msDriver" value="Driver Service" style="shape=hexagon;whiteSpace=wrap;html=1;fillColor=#e6ffe6" vertex="1" parent="1">
+          <mxGeometry x="720" y="130" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="msTrip" value="Trip Service" style="shape=hexagon;whiteSpace=wrap;html=1;fillColor=#e6ffe6" vertex="1" parent="1">
+          <mxGeometry x="620" y="200" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="msBilling" value="Billing Service" style="shape=hexagon;whiteSpace=wrap;html=1;fillColor=#e6ffe6" vertex="1" parent="1">
+          <mxGeometry x="530" y="270" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="msPayment" value="Payment Service" style="shape=hexagon;whiteSpace=wrap;html=1;fillColor=#e6ffe6" vertex="1" parent="1">
+          <mxGeometry x="720" y="270" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="msNotif" value="Notification Service" style="shape=hexagon;whiteSpace=wrap;html=1;fillColor=#e6ffe6" vertex="1" parent="1">
+          <mxGeometry x="620" y="340" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Adapters -->
+        <mxCell id="msDB" value="Database" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d3ffd3" vertex="1" parent="1">
+          <mxGeometry x="500" y="340" width="70" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="msPayAdp" value="Payment Adapter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7d3" vertex="1" parent="1">
+          <mxGeometry x="830" y="270" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="msSMSAdp" value="SMS Adapter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffd3d3" vertex="1" parent="1">
+          <mxGeometry x="720" y="410" width="90" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- MICROSERVICES Edges -->
+        <mxCell id="e11" style="endArrow=block" edge="1" parent="1" source="msPassengerUI" target="msAPIGW"/>
+        <mxCell id="e12" style="endArrow=block" edge="1" parent="1" source="msDriverUI" target="msAPIGW"/>
+        <mxCell id="e13" style="endArrow=block" edge="1" parent="1" source="msAPIGW" target="msPassenger"/>
+        <mxCell id="e14" style="endArrow=block" edge="1" parent="1" source="msAPIGW" target="msDriver"/>
+        <mxCell id="e15" style="endArrow=block" edge="1" parent="1" source="msAPIGW" target="msTrip"/>
+        <mxCell id="e16" style="endArrow=block" edge="1" parent="1" source="msAPIGW" target="msBilling"/>
+        <mxCell id="e17" style="endArrow=block" edge="1" parent="1" source="msAPIGW" target="msPayment"/>
+        <mxCell id="e18" style="endArrow=block" edge="1" parent="1" source="msAPIGW" target="msNotif"/>
+        <mxCell id="e19" style="endArrow=block" edge="1" parent="1" source="msBilling" target="msDB"/>
+        <mxCell id="e20" style="endArrow=block" edge="1" parent="1" source="msPayment" target="msPayAdp"/>
+        <mxCell id="e21" style="endArrow=block" edge="1" parent="1" source="msNotif" target="msSMSAdp"/>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

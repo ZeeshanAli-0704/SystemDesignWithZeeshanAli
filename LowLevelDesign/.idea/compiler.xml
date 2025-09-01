@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ParkingLotLLD" />
+        <module name="TicketBookingSystem" />
+        <module name="BloomFilters" />
+        <module name="Thread" />
+        <module name="ConsistentHashingImpl" />
+        <module name="ATMMachine" />
+        <module name="PollingSystem" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AbstractFactoryMethod" target="24" />
+      <module name="AdapterDesignPattern" target="24" />
+      <module name="BuilderPattern" target="24" />
+      <module name="FactoryDesignPattern" target="24" />
+      <module name="IteratorDesignPattern" target="24" />
+      <module name="Observer_Design_Pattern" target="24" />
+      <module name="SingletonSampleProject" target="24" />
+      <module name="solid-principle-example" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

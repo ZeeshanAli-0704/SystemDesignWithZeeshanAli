@@ -29,8 +29,7 @@ public class Entrance {
 
     public Ticket bookSpotAndGiveTicket(Vehicle vehicle) {
         ParkingSpot spot = manager.findParkingSpot(vehicle.getVehicleType());
-        if (spot != null) {
-            spot.occupy(vehicle.getVehicleType());
+        if (spot != null &&  spot.tryOccupy(vehicle.getVehicleType())) {
             return new Ticket.Builder()
                     .floorNo(spot.getFloorNumber())
                     .time(LocalDateTime.now())

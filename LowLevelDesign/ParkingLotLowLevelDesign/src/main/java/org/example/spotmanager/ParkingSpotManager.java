@@ -9,9 +9,10 @@ import org.example.parkingspot.ParkingSpot;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class ParkingSpotManager {
-    private final Map<Integer, Floor> floorMap = new HashMap<Integer, Floor>();
+    private final Map<Integer, Floor> floorMap = new ConcurrentHashMap<Integer, Floor>();
     private ParkingStrategy parkingStrategy;
     private SpotCompatibilityChecker compatibilityChecker = new DefaultSpotCompatibilityChecker();
 

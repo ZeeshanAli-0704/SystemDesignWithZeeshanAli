@@ -1,0 +1,96 @@
+
+# 🔄 Consistent Hashing Explained with an Example
+
+To understand **consistent hashing**, let’s walk through a simple example step by step.
+Imagine we have a **hash ring** with positions from `0–100`. Both **servers (nodes)** and **keys (data items)** are placed on this ring using a hash function.
+
+---
+
+## 🟢 Step 1: Initial Setup
+
+We start with **4 servers** placed on the ring:
+
+* **S1 → 10**
+* **S2 → 30**
+* **S3 → 60**
+* **S4 → 85**
+
+And we have **6 keys**:
+
+* **K1 → 12**
+* **K2 → 25**
+* **K3 → 40**
+* **K4 → 65**
+* **K5 → 70**
+* **K6 → 90**
+
+🔹 **Mapping Rule**: Each key is assigned to the **first server encountered while moving clockwise**.
+
+* `K1 (12)` → goes to `S2 (30)`
+* `K2 (25)` → goes to `S2 (30)`
+* `K3 (40)` → goes to `S3 (60)`
+* `K4 (65)` → goes to `S4 (85)`
+* `K5 (70)` → goes to `S4 (85)`
+* `K6 (90)` → goes to `S1 (10)` (wraps around the ring)
+
+✅ All keys are evenly distributed.
+
+---
+
+## 🔴 Step 2: Server Failure
+
+Now, suppose **S3 (60) crashes**.
+
+* Keys assigned to S3 (`K3`) need a new home.
+* In consistent hashing, these keys are reassigned to the **next available server in clockwise direction**, which is **S4 (85)**.
+
+🔹 New distribution:
+
+* `K1, K2` → S2
+* `K3` → S4 (moved from S3)
+* `K4, K5` → S4
+* `K6` → S1
+
+✅ Only **K3 is moved**. Other keys remain unaffected.
+This is the power of consistent hashing: **minimal disruption**.
+
+---
+
+## 🟡 Step 3: Adding a New Server
+
+Now, let’s **add a new server S5 at position 50**.
+
+* Keys between **S2 (30)** and **S5 (50)** will now move to S5.
+* In our case, only `K3 (40)` falls in this range.
+
+🔹 New distribution:
+
+* `K1, K2` → S2
+* `K3` → S5 (moved from S4)
+* `K4` → S3 (back online in this step, assumed)
+* `K5` → S4
+* `K6` → S1
+
+✅ Again, only **one key (K3)** was affected.
+
+---
+
+## 🎯 Key Takeaways from the Example
+
+* Keys are always mapped **clockwise to the nearest server**.
+* When a server **fails**, only the keys belonging to it move to the next server.
+* When a server is **added**, only the keys in its segment move.
+* This ensures **stability and scalability** — unlike traditional hashing where all keys might need to be remapped.
+
+---
+
+👉 This simple example shows why **consistent hashing** is a backbone for scalable distributed systems like caching (Memcached, Redis clusters), databases, and load balancers.
+
+---
+
+More Details:
+
+Get all articles related to system design 
+Hastag: SystemDesignWithZeeshanAli
+
+Git: https://github.com/ZeeshanAli-0704/SystemDesignWithZeeshanAli
