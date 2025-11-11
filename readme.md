@@ -1,4 +1,3 @@
-
 # System Design with Zeeshan Ali
 
 Welcome to the **System Design with Zeeshan Ali** repository! This collection is dedicated to in-depth articles and resources on system design, covering foundational concepts, architecture patterns, optimization techniques, and real-world case studies. Each section is carefully curated to provide clear explanations, practical examples, and best practices for building scalable, reliable, and efficient systems.
@@ -71,6 +70,7 @@ Welcome to the **System Design with Zeeshan Ali** repository! This collection is
 * **[Bloom Filters Implementation](./LowLevelDesign/BloomFilters/)**: Java/JS implementations of Bloom, Counting Bloom, and Cuckoo filters.
 * **[Consistent Hashing Implementation](./LowLevelDesign/ConsistentHashingImpl/)**: Practical code example of consistent hashing in Java.
 * **[Design Patterns](./LowLevelDesign/DesignPatterns/)**: LLD examples of popular design patterns.
+* **[Food Delivery System Design](./LowLevelDesign/FoodDeliveryApp/)**: Building a clean food ordering system in Java with in memory repos, delivery agent auto assign, and pending queues
 * **[Parking Lot System](./LowLevelDesign/ParkingLotLowLevelDesign/)**: Multi-floor parking lot with different spot types, entry/exit gates, and strategies.
 * **[Polling System](./LowLevelDesign/PollingSystem/)**: CRUD-based voting system design.
 * **[Threading Examples](./LowLevelDesign/Thread/)**: Multi-threading and synchronization examples.

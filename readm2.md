@@ -1,9 +1,3 @@
-Perfect 👍 now that your README structure is stable, I’ll enrich it by adding **short descriptions** to each section/folder, just like you did for *Blob Storage* and *Bloom Filters*.
-
-Here’s your **updated README with descriptions added**:
-
----
-
 # System Design with Zeeshan Ali
 
 Welcome to the **System Design with Zeeshan Ali** repository! This collection is dedicated to in-depth articles and resources on system design, covering foundational concepts, architecture patterns, optimization techniques, and real-world case studies. Each section is carefully curated to provide clear explanations, practical examples, and best practices for building scalable, reliable, and efficient systems.
