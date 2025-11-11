@@ -1,0 +1,1 @@
+- When we create a new Delivery Agent we should also check if any pending order in Queue. If yes assign to that agent.
