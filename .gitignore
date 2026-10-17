@@ -1,0 +1,7 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+target/
+*.class
